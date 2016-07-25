@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>INM5151 Projet Web</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+        <link rel="stylesheet" type="text/css" href="css/mainstyle.css">
+		<link rel="stylesheet" type="text/css" href="css/barmenu.css">
+		
+		<script type="text/javascript" src="fonctions/login.js"></script>
+    </head>
+
+    <body onload="ResetLoginWhenRefresh()">
+	
+	<!-- MAIN -->
+	<div id="wrapper">
+		
+		<!--Entete-->
+		<table>
+			<tr>
+				<td width="458" rowspan="2">
+					<!--Logo/Banniere-->
+					<a href="index.html"><img src="img/logo.png"></a>
+				</td>
+				<td width="102" rowspan="2"> 
+					<!--Google Search--><!--
+					<FORM method=GET action="http://www.google.com/search">
+						<INPUT TYPE=text name=q size=20 maxlength=255 value="">
+						<INPUT TYPE=hidden name=hl value="en">
+						<INPUT type=submit name=btnG VALUE="Chercher">
+					</FORM>-->
+					<!--End Google Search-->
+				</td>
+				<td colspan="2" align="right" id="verticalAlignMiddle">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="260" align="right">&nbsp;</td>
+				<td width="100" align="right">
+					<form action="cartPage.html">
+				  </form>
+			  </td>
+			</tr>
+		</table>
+		<!--End Entete-->
+
+		<p>
+		
+		<!--Bar Menu-->
+		<div id="wrap"><ul class="navbar">
+			<li><a href="shop/OnSale.html" target="iframeProduits">En Vente</a></li>
+			<li><a href="shop/RPG.html" target="iframeProduits">RPG</a></li>
+			<li><a href="shop/FPS.html" target="iframeProduits">FPS</a></li>
+			<li><a href="shop/RTS.html" target="iframeProduits">RTS</a></li>
+			<li><a href="shop/Action.html" target="iframeProduits">Action</a></li>
+			<li><a href="shop/Sport.html" target="iframeProduits">Sport</a></li>
+			<li><a href="shop/Simulation.html" target="iframeProduits">Simulation</a></li>
+		</ul></div>
+
+		<!-- CONTENU -->
+		<div id="content">
+			<p id="titleBar">
+			Connexion
+			</p>
+			
+			
+			<table><tr>
+			
+			<td valign="top" id="tab1">
+				<h2>Compte Existant</h2>
+				<p>
+				Note : Votre compte est verrouillé après 3 tentatives d'échec.
+				
+				<form name="loginForm" onsubmit="return LoginBox();" method="post" action="connecte.html">
+					Nom d'utilisateur ou Courriel <br>
+					<input type="text" name="login" size=30> <p>
+					Mot de passe <br>
+					<input type="password" name="PassWord" size=30> <p>
+					Oubliez votre mot de passe? <a href="passwordreset.html"><b>Cliquez ici</b></a>.<p>
+					<input type="submit" value="Ouvrir une session" id="LoginButton">
+				</form>
+
+				<p id="LoginMessage">&nbsp;</p>
+				
+			</td>
+			<td>&nbsp;</td>
+			<td valign="top" id="tab1">
+				<h2>Créer un compte</h2>
+				<p>
+				Si vous voulez créer un nouveau compte, cliquez sur "Créer".
+				
+				
+				<form action="register.html">
+					<input type="submit" value="Créer">
+				</form>
+				
+			</td>
+			
+			</tr></table>
+			
+			
+			
+			
+			<p>
+			<font size="1">Compte temporaire<br>
+			Nom d'utilisateur: Mathieu<br>
+			Mot de passe: pass</font>            
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p><font size="1"><br>
+		    </font>
+			  
+	    </div>
+		<!-- END CONTENU -->
+		
+	</div>
+	<!-- END MAIN -->
+	
+
+
+	<!-- COPYRIGHT -->
+	<div id="footer">
+		<p>
+		&copy; Mathieu Pronovost, Patrick Nguyen, Mu Niek Kim, Shen Ren
+		</p>
+	</div>
+	
+	</body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>INM5151 Projet Web</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+        <link rel="stylesheet" type="text/css" href="css/mainstyle.css">
+		<link rel="stylesheet" type="text/css" href="css/barmenu.css">
+		
+		<script type="text/javascript" src="fonctions/inscription.js"></script>
+    </head>
+
+    <body>
+	
+	<!-- MAIN -->
+	<div id="wrapper">
+		
+		<!--Entete-->
+		<table>
+			<tr>
+				<td width="458" rowspan="2">
+					<!--Logo/Banniere-->
+					<a href="index.html"><img src="img/logo.png"></a>
+				</td>
+				<td width="102" rowspan="2"> 
+					<!--Google Search--><!--
+					<FORM method=GET action="http://www.google.com/search">
+						<INPUT TYPE=text name=q size=20 maxlength=255 value="">
+						<INPUT TYPE=hidden name=hl value="en">
+						<INPUT type=submit name=btnG VALUE="Chercher">
+					</FORM>-->
+					<!--End Google Search-->
+				</td>
+				<td colspan="2" align="right" id="verticalAlignMiddle">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="260" align="right">&nbsp;</td>
+				<td width="100" align="right">
+					<form action="cartPage.html">
+				  </form>
+			  </td>
+			</tr>
+		</table>
+		<!--End Entete-->
+
+		<p>
+		
+		<!--Bar Menu-->
+		<div id="wrap"><ul class="navbar">
+			<li><a href="shop/OnSale.html" target="iframeProduits">En Vente</a></li>
+			<li><a href="shop/RPG.html" target="iframeProduits">RPG</a></li>
+			<li><a href="shop/FPS.html" target="iframeProduits">FPS</a></li>
+			<li><a href="shop/RTS.html" target="iframeProduits">RTS</a></li>
+			<li><a href="shop/Action.html" target="iframeProduits">Action</a></li>
+			<li><a href="shop/Sport.html" target="iframeProduits">Sport</a></li>
+			<li><a href="shop/Simulation.html" target="iframeProduits">Simulation</a></li>
+		</ul></div>
+
+		<!-- CONTENU -->
+		<div id="content">
+			<p id="titleBar">
+			Créer un compte : Information personnelle
+			</p>
+			
+			<font size="1">
+			Vous pouvez accélérer vos paiements en créant un compte et en enregistrant vos données de carte de crédit, de livraison et de facturation. 
+			<br>
+			Vous pouvez également accéder à l’état détaillé de vos commandes et au paramètre de votre compte. 
+			<br>
+			De plus, en ayant votre compte, vous avez votre propre Wishlist.
+			<br>
+			Il vous suffit d’entrer les informations requises. 
+			</font>
+			
+			<p>
+							
+				<form name="registerForm" method="post">
+					* Adresse de courriel <br>
+					<input type="text" name="email" size=30> <p>
+					
+					* Mot de passe <font size="1">(Min : 6, Max : 20)</font><br>
+					<input type="password" name="PassWord" maxlength="20" size=30> <p>
+					
+					* Confirmer le Mot de passe <br>
+					<input type="password" name="RePassWord" maxlength="20" size=30> <p>
+					
+					<table><tr>
+					
+					<td>
+					* Nom <br>
+					<input type="text" name="nom" maxlength="20" size=30> <p>
+					</td>
+					
+					<td>&nbsp;</td>
+					
+					<td>
+					* Prénom <br>
+					<input type="text" name="prenom" maxlength="20" size=30> <p>
+					</td>
+					
+					</tr></table>
+					
+					* Adresse de livraison <br>
+					<input type="text" name="adresseLiv" maxlength="100" size=60> <p>
+					
+					Adresse de facture <br>
+					<input type="text" name="adresseFac" maxlength="100" size=60> <p>
+					
+					
+					<table>
+					<tr>
+					<td>
+					* Ville <br>
+					<input type="text" name="ville" maxlength="20" size=30> <p>
+					</td>
+					
+					<td>&nbsp;</td>
+					
+					<td>
+					* Province <br>
+					<input type="text" name="province" maxlength="20" size=30> <p>
+					</td>
+					</tr>
+					<td>
+					
+					
+					<tr>
+					<td>
+					* Pays <br>
+					<input type="text" name="pays" maxlength="20" size=30> <p>
+					</td>
+					
+					<td>&nbsp;</td>
+					
+					<td>
+					* Code Postal <font size="1">(Sans espace)</font><br>
+					<input type="text" name="codePostal" maxlength="6" size=30> <p>
+					</td>
+					</tr>
+					</table>
+					
+					<table>
+					<tr>
+					<td>Numéro de téléphone</td> <td>Ext.</td> 
+					</tr>
+					<tr>
+					<td>
+					( <input type="text" name="" maxlength="3" size=3> ) 
+					<input type="text" name="" maxlength="7" size=7> &nbsp;
+					</td>
+					
+					<td><input type="text" name="" maxlength="3" size=3></td>
+					</tr>
+					</table>
+					
+					<p>
+					
+					Date de naissance <br>
+					<select name="mois">
+						<option value="" selected >Mois</option>
+						<option value="1">Janvier</option>
+						<option value="2">Février</option>
+						<option value="3">Mars</option>
+						<option value="4">Avril</option>
+						<option value="5">Mai</option>
+						<option value="6">Juin</option>
+						<option value="7">Juillet</option>
+						<option value="8">Août</option>
+						<option value="9">Septembre</option>
+						<option value="10">Octobre</option>
+						<option value="11">Novembre</option>
+						<option value="12">Décembre</option>
+					</select>
+					&nbsp;&nbsp;
+					
+					<select name="jour">
+						<option value="" selected>Jour</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+						<option value="13">13</option>
+						<option value="14">14</option>
+						<option value="15">15</option>
+						<option value="16">16</option>
+						<option value="17">17</option>
+						<option value="18">18</option>
+						<option value="19">19</option>
+						<option value="20">20</option>
+						<option value="21">21</option>
+						<option value="22">22</option>
+						<option value="23">23</option>
+						<option value="24">24</option>
+						<option value="25">25</option>
+						<option value="26">26</option>
+						<option value="27">27</option>
+						<option value="28">28</option>
+						<option value="29">29</option>
+						<option value="30">30</option>
+						<option value="31">31</option>
+					</select>
+					&nbsp;&nbsp;
+					<select name="annee">
+						<option value="" selected>Année</option>
+						<option value="select">2001</option>
+						<option value="select">2000</option>
+						<option value="select">1999</option>
+						<option value="select">1998</option>
+						<option value="select">1997</option>
+						<option value="select">1996</option>
+						<option value="select">1995</option>
+						<option value="select">1994</option>
+						<option value="select">1993</option>
+						<option value="select">1992</option>
+						<option value="select">1991</option>
+						<option value="select">1990</option>
+						<option value="select">1989</option>
+						<option value="select">1988</option>
+						<option value="select">1987</option>
+						<option value="select">1986</option>
+						<option value="select">1985</option>
+						<option value="select">1984</option>
+						<option value="select">1983</option>
+						<option value="select">1982</option>
+						<option value="select">1981</option>
+						<option value="select">1980</option>
+						<option value="select">1979</option>
+						<option value="select">1978</option>
+						<option value="select">1977</option>
+						<option value="select">1976</option>
+						<option value="select">1975</option>
+						<option value="select">1974</option>
+						<option value="select">1973</option>
+						<option value="select">1972</option>
+						<option value="select">1971</option>
+						<option value="select">1970</option>
+						<option value="select">1969</option>
+						<option value="select">1968</option>
+						<option value="select">1967</option>
+						<option value="select">1966</option>
+						<option value="select">1965</option>
+						<option value="select">1964</option>
+						<option value="select">1963</option>
+						<option value="select">1962</option>
+						<option value="select">1961</option>
+						<option value="select">1960</option>
+					</select>
+					<p>
+					
+					Sexe <br>
+					<input type="radio" name="radiobutton" value="Femme">
+					<label>Femme</label>
+					&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="radiobutton" value="Homme">
+					<label>Homme</label>
+
+					
+					
+					<p>
+					<font size="1" color="red">* Information requise</font><br>
+					<div id="errorBox" style="color: #FF0000;"></div>		
+					<p>
+					
+					
+					<input type="button" onClick="inscription()" value="M'inscrire">
+					
+					<p>&nbsp;
+					<p>&nbsp;
+					<p>&nbsp;
+				</form>
+
+			
+			
+		</div>
+		<!-- END CONTENU -->
+		
+	</div>
+	<!-- END MAIN -->
+	
+
+
+	<!-- COPYRIGHT -->
+	<div id="footer">
+		<p>
+		&copy; Mathieu Pronovost, Patrick Nguyen, Mu Niek Kim, Shen Ren
+		</p>
+	</div>
+	
+	</body>
+</html>

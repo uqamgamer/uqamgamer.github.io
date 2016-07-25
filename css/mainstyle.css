@@ -1,0 +1,152 @@
+body {
+	background-color: #FFFFFF;
+	background-image: url("../img/bgsitevente.jpg");
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	/*background-size: 100% auto;*/
+	font-family: Verdana, Sans-Serif, Lucida Console;
+	font-size: 14px; /* Font size par defaut */
+	margin: 0px 0px 0px 0px; /*top right down left*/
+}
+
+
+
+a:link, a:visited, a:active {
+	text-decoration: none; 
+	color: #7A7A7A;
+}
+
+a:hover { 
+	color: #FFAE00;
+	/*height: 0px;*/
+	text-decoration: none; 
+}
+
+img {
+	border: 0px solid;
+}
+
+
+th {
+	font-family: Arial;
+	font-size: 15px;
+	text-align: left;
+}
+
+td {
+	padding: 0px 0px 0px 0px; /*top right down left*/
+}
+
+h1 {
+	color: #FFC600;
+}
+h2 {
+	color: #FFAE00;
+}
+
+#RightDownPad {
+	padding: 0px 25px 25px 0px; /*top right down left*/
+}
+
+#titleBar {
+	border-bottom: 1px solid #E4E4E4;
+}
+
+#tab1 {
+	border: 1px solid #aaaaaa; 
+	margin: 10px 10px 10px 10px; /*top right down left*/
+	padding: 10px 10px 10px 10px; /*top right down left*/
+}
+
+#produitDetailTabTitre {
+	border-bottom: 4px solid #E4E4E4; 
+	font-size: 20px;
+	width: 100%;
+	margin: 0px auto 5px auto; /*top right down left*/
+}
+#produitDetailTab {
+	border: 0px solid #000000; 
+	/*font-size: 20px;*/
+	width: 100%;
+	margin: 0px auto 5px auto; /*top right down left*/
+}
+#produitDetailTab td {
+	padding: 5px 10px 5px 10px; /*top right down left*/
+}
+#produitDetailRating {
+	border: 0px solid #A6A6A6; 
+	/*font-size: 20px;*/
+	width: 100%;
+	margin: 0px auto 5px auto; /*top right down left*/
+	padding: 5px 10px 5px 10px; /*top right down left*/
+	background-color: #E4E4E4;
+}
+#produitDetailRating td {
+	border-bottom: 4px solid #cccccc; 
+	/*font-size: 20px;*/
+	margin: 0px auto 5px auto; /*top right down left*/
+	padding: 5px 10px 5px 10px; /*top right down left*/
+}
+
+#cartTable {
+	border: 0px;
+	width: 100%;
+	margin: 0px 0px 0px 0px; /*top right down left*/
+	padding: 0px 0px 0px 0px; /*top right down left*/
+}
+#cartTable th{
+	background-color: #dddddd;
+	text-align: center;
+}
+#cartTable td{
+	text-align: center;
+}
+
+
+#wrapper {
+	background-image: url("../img/swordsbg.png");
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-color: #F2F4F6;
+	width: 940px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0px; /*top right down left*/
+	height: 100%;
+	padding: 10px 5px 10px 5px; /*top right down left*/
+}
+
+#content {
+	border: 0px solid #000000;
+	/*text-align: justify;*/
+	line-height: 150%;
+	word-wrap: break-word; /* Long word won't go out of the div box*/
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px; /*top right down left*/
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 0px; /*top right down left*/
+}
+
+#footer {
+	background-color: #dddddd;
+	color: #939393;
+	font-size: 11px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px; /*top right down left*/
+	padding-top: 4px;
+	padding-bottom: 4px;
+	height: 36px;
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+                        
+
+}

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>INM5151 Projet Web</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+        <link rel="stylesheet" type="text/css" href="css/mainstyle.css">
+		<link rel="stylesheet" type="text/css" href="css/barmenu.css">
+		
+		<script type="text/javascript" src="fonctions/paiement.js"></script>
+    </head>
+
+    <body>
+	
+	<!-- MAIN -->
+	<div id="wrapper">
+
+		<table>
+			<tr>
+				<td width="458" rowspan="2">
+					<!--Logo/Banniere-->
+					<a href="indexLogged.html"><img src="img/logo.png"></a>
+				</td>
+				<td width="102" rowspan="2"> 
+					<!--Google Search--><!--
+					<FORM method=GET action="http://www.google.com/search">
+						<INPUT TYPE=text name=q size=20 maxlength=255 value="">
+						<INPUT TYPE=hidden name=hl value="en">
+						<INPUT type=submit name=btnG VALUE="Chercher">
+					</FORM>-->
+					<!--End Google Search-->
+				</td>
+				<td align="right" id="verticalAlignMiddle" width="360">Bienvenue <b>Mathieu</b>  : 
+				<a href="deconnecte.html">Déconnexion</a></td>
+			</tr>
+			<tr>
+				<td align="right">
+					<a href="moncompte.html"><img src="img/moncompteicon.png" alt="Mon Compte"/></a>
+					<a href="cartPage.html"><img src="img/cart3.png" alt="" width="106" height="42" id="cart"/></a>
+				</td>
+			</tr>
+		</table>
+		<!--End Entete-->
+
+		<p>
+		
+		<!--Bar Menu-->
+		<div id="wrap"><ul class="navbar">
+			<li><a href="shop/OnSale.html" target="iframeProduits">En Vente</a></li>
+			<li><a href="shop/RPG.html" target="iframeProduits">RPG</a></li>
+			<li><a href="shop/FPS.html" target="iframeProduits">FPS</a></li>
+			<li><a href="shop/RTS.html" target="iframeProduits">RTS</a></li>
+			<li><a href="shop/Action.html" target="iframeProduits">Action</a></li>
+			<li><a href="shop/Sport.html" target="iframeProduits">Sport</a></li>
+			<li><a href="shop/Simulation.html" target="iframeProduits">Simulation</a></li>
+		</ul></div>
+
+		<!-- CONTENU -->
+		<div id="content">
+			<p id="titleBar">
+				Effectuer un paiement
+			</p>
+			
+			<h1>1. Vos achats</h1>
+			
+			<table id="cartTable">
+				<tr>
+					<th>Item</th><th>Description</th><th>Quantité</th><th>Prix</th><th>Sous-total</th>
+				</tr>
+				
+				<tr>
+					<td bgcolor="#FFFFFF"><img src="img/action02.png" width="100" height="140"></td>
+					
+					<td bgcolor="#FFFFFF">Super Mario Galaxy</td>
+					
+					<td bgcolor="#FFFFFF">2</td>
+					
+					<td bgcolor="#FFFFFF">20$</td>
+					
+					<td bgcolor="#FFFFFF">40$</td>
+				</tr>
+				
+                <tr>
+					<td bgcolor="#F9F9F9"><img src="img/action06.png" width="100" height="140"></td>
+					
+					<td bgcolor="#F9F9F9">Donkey Kong Country</td>
+					
+					<td bgcolor="#F9F9F9">1</td>
+					
+					<td bgcolor="#F9F9F9">20$</td>
+					
+					<td bgcolor="#F9F9F9">20$</td>
+				</tr>
+				
+			</table>
+			
+			<p>
+			<div align="right">
+				Quantité Totale : 3
+				<p>
+				Prix Total : 60$
+				<p>
+			</div>
+			
+			
+			<p>
+			<h1>2. Adresse</h1>
+			
+				<form name="paieAdresseForm" method="post">
+					
+					<table><tr>
+					
+					<td>
+					* Nom <br>
+					<input type="text" name="nom" value="Pronovost" maxlength="20" size=30> <p>
+					</td>
+					
+					<td>&nbsp;</td>
+					
+					<td>
+					* Prénom <br>
+					<input type="text" name="prenom" value="Mathieu" maxlength="20" size=30> <p>
+					</td>
+					
+					</tr></table>
+					
+					* Adresse de livraison <br>
+					<input type="text" name="adresseLiv" value="1234, boul. St-Laurent" maxlength="100" size=60> <p>
+					
+					Adresse de facture <br>
+					<input type="text" name="" value="4321, rue St-Denis" maxlength="100" size=60> <p>
+					
+					
+					<table>
+					<tr>
+					<td>
+					* Ville <br>
+					<input type="text" name="ville" value="Montreal" maxlength="20" size=30> <p>
+					</td>
+					
+					<td>&nbsp;</td>
+					
+					<td>
+					* Province <br>
+					<input type="text" name="province" value="Quebec" maxlength="20" size=30> <p>
+					</td>
+					</tr>
+					<td>
+					
+					
+					<tr>
+					<td>
+					* Pays <br>
+					<input type="text" name="pays" value="Canada" maxlength="20" size=30> <p>
+					</td>
+					
+					<td>&nbsp;</td>
+					
+					<td>
+					* Code Postal <font size="1">(Sans espace)</font><br>
+					<input type="text" name="codePostal" value="H1A2B3" maxlength="6" size=30> <p>
+					</td>
+					</tr>
+					</table>
+					
+					<table>
+					<tr>
+					<td>Numéro de téléphone</td> <td>Ext.</td> 
+					</tr>
+					<tr>
+					<td>
+					( <input type="text" name="" maxlength="3" size=3> ) 
+					<input type="text" name="" maxlength="7" size=7> &nbsp;
+					</td>
+					
+					<td><input type="text" name="" maxlength="3" size=3></td>
+					</tr>
+					</table>
+					
+					<p>
+					<div id="errorBox" style="color: #FF0000;">&nbsp;</div>
+					
+				</form>
+			
+			
+			<h1>3. Option de Livraison</h1>
+			
+				<input type=radio name="optliv" checked> 10.00$ Standard<p>
+				<input type=radio name="optliv"> 20.00$ Prioritaire<p>
+			
+			&nbsp;
+			
+			<h1>4. Paiement</h1>
+			Carte de crédits acceptées 
+			<p> 
+			<img src="img/creditcards.jpg">
+			<p>
+			<img src="img/paypalsecurelogo.png">
+			<p>
+			
+			
+			<form name="paieForm" method="post">
+			
+				Option de paiement <br>
+				<select name="optionCC">
+					<option value="" selected>Choisir</option>
+					<option value="AE">American Express</option>
+					<option value="Cirrus">Cirrus</option>
+					<option value="Delta">Delta</option>
+					<option value="DD">Direct Debit</option>
+					<option value="Discover">Discover</option>
+					<option value="JCB">JCB</option>
+					<option value="MC">Master Card</option>
+					<option value="MB">Moneybookers</option>
+					<option value="PP">PayPal</option>
+					<option value="Solo">Solo</option>
+					<option value="Switch">Switch</option>
+					<option value="Visa">Visa</option>
+					<option value="WU">Western Union</option>
+					<option value="2CO">2CO</option>
+				</select> 
+				<p>
+				
+				* Adresse Courriel <br>
+				<input type="text" name="email" size=30>
+				<p>
+				
+				* Numéro de carte <br>
+				<input type="text" name="numeroCC" size=30>
+				<p>
+				
+				* Date d'échéance <br>
+				<select name="jour">
+					<option value="" selected>Jour</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+					<option value="21">21</option>
+					<option value="22">22</option>
+					<option value="23">23</option>
+					<option value="24">24</option>
+					<option value="25">25</option>
+					<option value="26">26</option>
+					<option value="27">27</option>
+					<option value="28">28</option>
+					<option value="29">29</option>
+					<option value="30">30</option>
+					<option value="31">31</option>
+				</select>
+				
+				<select name="mois">
+					<option value="" selected>Mois</option>
+					<option value="1">Janvier</option>
+					<option value="2">Février</option>
+					<option value="3">Mars</option>
+					<option value="4">Avril</option>
+					<option value="5">Mai</option>
+					<option value="6">Juin</option>
+					<option value="7">Juillet</option>
+					<option value="8">Août</option>
+					<option value="9">Septembre</option>
+					<option value="10">Octobre</option>
+					<option value="11">Novembre</option>
+					<option value="12">Décembre</option>
+				</select> 
+				
+				<select name="annee">
+					<option value="" selected>Année</option>
+					<option value="2014">2014</option>
+					<option value="2015">2015</option>
+					<option value="2016">2016</option>
+					<option value="2017">2017</option>
+					<option value="2018">2018</option>
+				</select>
+				<p>
+				
+				* CVV <br>
+				<input type="text" name="CVV" size=5>
+				<p>
+				
+				<font size="1" color="red">* Information requise</font><br>
+				
+				<input type=checkbox id="confirmation">
+				<font size="1">
+				En cochant ici, je certifie que je suis âgé de 18 ans ou plus, et j'autorise cette opération, 
+				ou que mon parent ou tuteur a autorisé cette opération.
+				</font>
+				<br>
+				
+				<div id="errorBox2" style="color: #FF0000;">&nbsp;</div>
+				<p>
+				
+				<hr>
+				
+				<font size="1">
+				Toutes les transactions effectuées sur UQAMGamer sont sécurisées. <br>
+				Tous les renseignements personnels que vous nous communiquez sont traités avec la plus stricte confidentialité.
+				</font>
+				
+				<div align="right">
+					<INPUT TYPE="button" onClick="paiementOption();paiementAdresse();" value="Soumettre la commande">
+				</div>
+			
+			</form>
+			
+			<p>
+			
+			
+		</div>
+		<!-- END CONTENU -->
+		
+	</div>
+	<!-- END MAIN -->
+	
+
+
+	<!-- COPYRIGHT -->
+
+	<div id="footer">
+		<p>
+		&copy; Mathieu Pronovost, Patrick Nguyen, Mu Niek Kim, Shen Ren
+		</p>
+	</div>
+	
+	</body>
+</html>

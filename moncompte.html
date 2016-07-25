@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>INM5151 Projet Web</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+        <link rel="stylesheet" type="text/css" href="css/mainstyle.css">
+		<link rel="stylesheet" type="text/css" href="css/barmenu.css">
+		
+		<!--script type="text/javascript" src="fonctions/.js"></script-->
+    </head>
+
+    <body>
+		
+	<!-- MAIN -->
+	<div id="wrapper">
+
+		<table>
+			<tr>
+				<td width="458" rowspan="2">
+					<!--Logo/Banniere-->
+					<a href="indexLogged.html"><img src="img/logo.png"></a>
+				</td>
+				<td width="102" rowspan="2"> 
+					<!--Google Search--><!--
+					<FORM method=GET action="http://www.google.com/search">
+						<INPUT TYPE=text name=q size=20 maxlength=255 value="">
+						<INPUT TYPE=hidden name=hl value="en">
+						<INPUT type=submit name=btnG VALUE="Chercher">
+					</FORM>-->
+					<!--End Google Search-->
+				</td>
+				<td colspan="2" align="right" id="verticalAlignMiddle">Bienvenue <b>Mathieu</b>  : 
+				<a href="deconnecte.html">Déconnexion</a></td>
+			</tr>
+			<tr>
+				<td width="360" align="right">
+					<a href="moncompte.html"><img src="img/moncompteicon.png" alt="Mon Compte"/></a>
+					<a href="cartPage.html"><img src="img/cart0.png" alt="" width="106" height="42" id="cart"/></a>
+				</td>
+			</tr>
+		</table>
+		<!--End Entete-->
+
+		<p>
+		
+		<!--Bar Menu-->
+		<div id="wrap"><ul class="navbar">
+			<li><a href="shop/OnSale.html" target="iframeProduits">En Vente</a></li>
+			<li><a href="shop/RPG.html" target="iframeProduits">RPG</a></li>
+			<li><a href="shop/FPS.html" target="iframeProduits">FPS</a></li>
+			<li><a href="shop/RTS.html" target="iframeProduits">RTS</a></li>
+			<li><a href="shop/Action.html" target="iframeProduits">Action</a></li>
+			<li><a href="shop/Sport.html" target="iframeProduits">Sport</a></li>
+			<li><a href="shop/Simulation.html" target="iframeProduits">Simulation</a></li>
+		</ul></div>
+
+		<!-- CONTENU -->
+		<div id="content">
+			<table width="100%">
+			<tr>
+			<td vAlign="top" width="250">
+				<p id="titleBar">
+					Options
+				</p>
+				<ul>
+				<li><b>Éditer mon profile</b><br>
+				<li><a href="moncompte2.html">Données de paiement</a><br>
+				<li><a href="moncompte3.html">Historique des paiements</a><br>
+				<li><a href="moncompte4.html">Mon Wishlist</a><br>
+				</ul>
+			</td>
+			
+			<td width="10">&nbsp;</td>
+			
+			<td vAlign="top">
+				<p id="titleBar">
+					Mon compte
+				</p>
+				
+				<form name="moncompteForm" onsubmit="" method="post" action="">
+					
+					Nom d'utilisateur <br>
+					<input type="text" value="" size=30> <p>
+					
+					<table><tr>
+					
+					<td>
+					Nom <br>
+					<input type="text" value="Pronovost" maxlength="20" size=30> <p>
+					</td>
+					
+					<td>&nbsp;</td>
+					
+					<td>
+					Prénom <br>
+					<input type="text" value="Mathieu" maxlength="20" size=30> <p>
+					</td>
+					
+					</tr></table>
+					
+					Date de naissance <br>
+					<select name="mois">
+						<option value="">Mois</option>
+						<option value="1">Janvier</option>
+						<option value="2" selected>Février</option>
+						<option value="3">Mars</option>
+						<option value="4">Avril</option>
+						<option value="5">Mai</option>
+						<option value="6">Juin</option>
+						<option value="7">Juillet</option>
+						<option value="8">Août</option>
+						<option value="9">Septembre</option>
+						<option value="10">Octobre</option>
+						<option value="11">Novembre</option>
+						<option value="12">Décembre</option>
+					</select>
+					&nbsp;&nbsp;
+					
+					<select name="jour">
+						<option value="">Jour</option>
+						<option value="1">1</option>
+						<option value="2" selected>2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+						<option value="13">13</option>
+						<option value="14">14</option>
+						<option value="15">15</option>
+						<option value="16">16</option>
+						<option value="17">17</option>
+						<option value="18">18</option>
+						<option value="19">19</option>
+						<option value="20">20</option>
+						<option value="21">21</option>
+						<option value="22">22</option>
+						<option value="23">23</option>
+						<option value="24">24</option>
+						<option value="25">25</option>
+						<option value="26">26</option>
+						<option value="27">27</option>
+						<option value="28">28</option>
+						<option value="29">29</option>
+						<option value="30">30</option>
+						<option value="31">31</option>
+					</select>
+					&nbsp;&nbsp;
+					<select name="annee">
+						<option value="">Année</option>
+						<option value="select">2001</option>
+						<option value="select" selected>2000</option>
+						<option value="select">1999</option>
+						<option value="select">1998</option>
+						<option value="select">1997</option>
+						<option value="select">1996</option>
+						<option value="select">1995</option>
+						<option value="select">1994</option>
+						<option value="select">1993</option>
+						<option value="select">1992</option>
+						<option value="select">1991</option>
+						<option value="select">1990</option>
+						<option value="select">1989</option>
+						<option value="select">1988</option>
+						<option value="select">1987</option>
+						<option value="select">1986</option>
+						<option value="select">1985</option>
+						<option value="select">1984</option>
+						<option value="select">1983</option>
+						<option value="select">1982</option>
+						<option value="select">1981</option>
+						<option value="select">1980</option>
+						<option value="select">1979</option>
+						<option value="select">1978</option>
+						<option value="select">1977</option>
+						<option value="select">1976</option>
+						<option value="select">1975</option>
+						<option value="select">1974</option>
+						<option value="select">1973</option>
+						<option value="select">1972</option>
+						<option value="select">1971</option>
+						<option value="select">1970</option>
+						<option value="select">1969</option>
+						<option value="select">1968</option>
+						<option value="select">1967</option>
+						<option value="select">1966</option>
+						<option value="select">1965</option>
+						<option value="select">1964</option>
+						<option value="select">1963</option>
+						<option value="select">1962</option>
+						<option value="select">1961</option>
+						<option value="select">1960</option>
+					</select>
+					<p>
+					
+					Sexe <br>
+					<input type="radio" name="radiobutton" value="Femme">
+					<label>Femme</label>
+					&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="radiobutton" value="Homme" checked>
+					<label>Homme</label>
+					<p>
+					
+					Adresse de livraison <br>
+					<input type="text" value="1234, boul. St-Laurent" size=60> <p>
+					
+					Adresse de facture <br>
+					<input type="text" value="4321, rue St-Denis" size=60> <p>
+					
+					
+					<table>
+					<tr>
+					<td>
+					Ville <br>
+					<input type="text" value="Montreal" size=30> <p>
+					</td>
+					
+					<td>&nbsp;</td>
+					
+					<td>
+					Province <br>
+					<input type="text" value="Quebec" size=30> <p>
+					</td>
+					</tr>
+					<td>
+					
+					
+					<tr>
+					<td>
+					Pays <br>
+					<input type="text" value="Canada" size=30> <p>
+					</td>
+					
+					<td>&nbsp;</td>
+					
+					<td>
+					Code Postal <br>
+					<input type="text" value="H1A2B3" size=30> <p>
+					</td>
+					</tr>
+					</table>
+					
+					<table>
+					<tr>
+					<td>Numéro de téléphone</td> <td>Ext.</td> 
+					</tr>
+					<tr>
+					<td>
+					( <input type="text" value="514" maxlength="3" size=3> ) 
+					<input type="text" value="5557777" maxlength="7" size=7> &nbsp;
+					</td>
+					
+					<td><input type="text" value="3" maxlength="3" size=3></td>
+					</tr>
+					</table>
+					
+					<p>
+					
+				</form>
+				
+				<p>
+				<hr>
+				
+				<div align="right">
+					<form action="moncompte_s.html">
+						<INPUT TYPE=submit size=10 value="Sauvegarder">
+					</form>
+				</div>
+				
+				<p>
+				
+			</td>
+			</tr>
+			</table>
+		</div>
+		<!-- END CONTENU -->
+		
+	</div>
+	<!-- END MAIN -->
+	
+
+
+	<!-- COPYRIGHT -->
+
+	<div id="footer">
+		<p>
+		&copy; Mathieu Pronovost, Patrick Nguyen, Mu Niek Kim, Shen Ren
+		</p>
+	</div>
+	
+	</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>INM5151 Projet Web</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+        <link rel="stylesheet" type="text/css" href="css/mainstyle.css">
+		<link rel="stylesheet" type="text/css" href="css/barmenu.css">
+		
+		<script type="text/javascript" src="fonctions/panierAjour.js"></script>
+    </head>
+
+    <body>
+		
+	<!-- MAIN -->
+	<div id="wrapper">
+
+		<table>
+			<tr>
+				<td width="458" rowspan="2">
+					<!--Logo/Banniere-->
+					<a href="indexLogged.html"><img src="img/logo.png"></a>
+				</td>
+				<td width="102" rowspan="2"> 
+					<!--Google Search--><!--
+					<FORM method=GET action="http://www.google.com/search">
+						<INPUT TYPE=text name=q size=20 maxlength=255 value="">
+						<INPUT TYPE=hidden name=hl value="en">
+						<INPUT type=submit name=btnG VALUE="Chercher">
+					</FORM>-->
+					<!--End Google Search-->
+				</td>
+				<td align="right" id="verticalAlignMiddle" width="360">Bienvenue <b>Mathieu</b>  : 
+				<a href="deconnecte.html">Déconnexion</a></td>
+			</tr>
+			<tr>
+				<td align="right">
+					<a href="moncompte.html"><img src="img/moncompteicon.png" alt="Mon Compte"/></a>
+					<a href="cartPage.html"><img src="img/cart3.png" alt="" width="106" height="42" id="cart"/></a>
+				</td>
+			</tr>
+		</table>
+		<!--End Entete-->
+
+		<p>
+		
+		<!--Bar Menu-->
+		<div id="wrap"><ul class="navbar">
+			<li><a href="shop/OnSale.html" target="iframeProduits">En Vente</a></li>
+			<li><a href="shop/RPG.html" target="iframeProduits">RPG</a></li>
+			<li><a href="shop/FPS.html" target="iframeProduits">FPS</a></li>
+			<li><a href="shop/RTS.html" target="iframeProduits">RTS</a></li>
+			<li><a href="shop/Action.html" target="iframeProduits">Action</a></li>
+			<li><a href="shop/Sport.html" target="iframeProduits">Sport</a></li>
+			<li><a href="shop/Simulation.html" target="iframeProduits">Simulation</a></li>
+		</ul></div>
+
+		<!-- CONTENU -->
+		<div id="content">
+			<p id="titleBar">
+				Panier d'Achat
+			</p>
+			
+			<form name=panierAchat>
+			<table id="cartTable">
+				<tr>
+					<th>Item</th><th>Description</th><th>Quantité</th><th>Prix</th><th>Sous-total</th>
+				</tr>
+				
+				<tr>
+					<td bgcolor="#FFFFFF"><img src="img/action02.png" width="100" height="140"></td>
+					
+					<td bgcolor="#FFFFFF">Super Mario Galaxy</td>
+					
+					<td bgcolor="#FFFFFF">
+						<INPUT TYPE=text id=qte1 size=10 maxlength=10 value="2"><br>
+
+						<a href="#">Supprimer</a><br>
+					
+					</td>
+					
+					<td id="Prix1" bgcolor="#FFFFFF">20$</td>
+					
+					<td bgcolor="#FFFFFF"><span id="SousTotal1">--</span>$</td>
+				</tr>
+				
+                <tr>
+					<td bgcolor="#F9F9F9"><img src="img/action06.png" width="100" height="140"></td>
+					
+					<td bgcolor="#F9F9F9">Donkey Kong Country</td>
+					
+					<td bgcolor="#F9F9F9">
+						<INPUT TYPE=text id=qte2 size=10 maxlength=10 value="1"><br>
+
+						<a href="#">Supprimer</a><br>
+					
+					</td>
+					
+					<td id="Prix2" bgcolor="#F9F9F9">20$</td>
+					
+					<td bgcolor="#F9F9F9"><span id="SousTotal2">--</span>$</td>
+				</tr>
+				
+			</table>
+			
+			<p>
+			<div align="right">
+				Item(s) ajoutés au Panier : <input type="text" size=3 id="nombreItem" readonly>
+				<p>
+				Prix Total : <input type="text" size=7 id="PrixTotal" readonly>
+				<p>
+				<INPUT TYPE=button size=10 maxlength=10 value="Mise à Jour" onclick="ajouter();Update();">
+				<p>
+				
+				<form>
+					<input type="button" onClick="parent.location='indexLogged.html'"value="Continuer à magasiner">
+				</form>
+				<p>
+				
+				<form action="paiement.html">
+					<input type="submit" id="effectuePaiement" value="Effectuer la paiement">
+				</form>
+				<br>
+				<div id="errorBox" style="color: #FF0000;">&nbsp;</div>
+				<br>
+				<br><br><br><br><br>
+			</div>
+			
+			<form>
+			
+			
+		</div>
+		<!-- END CONTENU -->
+		
+	</div>
+	<!-- END MAIN -->
+	
+
+
+	<!-- COPYRIGHT -->
+
+	<div id="footer">
+		<p>
+		&copy; Mathieu Pronovost, Patrick Nguyen, Mu Niek Kim, Shen Ren
+		</p>
+	</div>
+    <script>
+			ajouter();
+		Update();
+	</script>
+	</body>
+</html>

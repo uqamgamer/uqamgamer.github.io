@@ -1,0 +1,76 @@
+#wrap {
+	width: 100%; /* Spans the width of the page */
+	height: 40px; 
+	z-index: 99; /* Makes sure that your menu remains on top of other page elements */
+	position: block;
+	background-image: url("../img/menuBG.png");
+	background-color: #dddddd; 
+	margin: 0px 0px 0px 0px; /*top right down left*/
+	padding: 0px 0px 0px 0px; /*top right down left*/
+}
+	
+.navbar	{
+	height: 38px;
+    margin: 0px 0px 0px 183px;
+	padding: 0px 0px 0px 0px;
+	position: absolute; /* Ensures that the menu doesn’t affect other elements */
+}
+
+.navbar li 	{
+	height: auto;
+	width: 80px;  /* Each menu item wide*/
+	float: left;  /* This lines up the menu items horizontally */
+	text-align: center;  /* All text is placed in the center of the box */
+	list-style: none;  /* Removes the default styling (bullets) for the list */
+	font: normal 12px Verdana, Sans-Serif, Lucida Console;  
+	margin: 0px 0px 0px 0px; /*top right down left*/
+	padding: 0px 0px 0px 0px;
+	border-left: 1px solid #F2F4F6;
+	border-right: 1px solid #F2F4F6;
+}
+
+.navbar a {							
+	padding: 12px 0px 12px 0px;  /* Adds a padding on the top and bottom so the text appears centered vertically */
+	/*border-left: 1px solid #787878;
+	border-right: 0px solid #787878;*/
+	text-decoration: none;  /* Removes the default hyperlink styling. */
+	color: #000000; /* Text color is white */
+	display: block;
+}
+		
+		
+.navbar li:hover a:hover { 
+	background-color: #F7F7F7;
+	color: #FFAE00;
+} 
+ 
+ 
+.navbar li ul {
+	display: none;  /* Hides the drop-down menu */
+	height: auto;									
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+}				
+
+.navbar li:hover ul {
+	display: block; /* Displays the drop-down box when the menu item is hovered over */
+}
+
+.navbar li ul li {
+	background-color: #dddddd;
+	font-color: #FFFFFF;
+	margin: 0px 0px 0px -1px;
+	padding: 0px 0px 0px -1px;	
+} 
+ 
+.navbar li ul li a {
+	border-left: 0px solid #00ff00; 
+	border-right: 0px solid #FF0000; 
+	border-top: 1px solid #778899; 
+	border-bottom: 0px solid #0000FF;
+}
+				
+.navbar li ul li a:hover {
+	background-color: #c0c9cf;
+	color: #00aaff;
+}

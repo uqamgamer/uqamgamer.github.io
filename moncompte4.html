@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>INM5151 Projet Web</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+        <link rel="stylesheet" type="text/css" href="css/mainstyle.css">
+		<link rel="stylesheet" type="text/css" href="css/barmenu.css">
+		
+		<script type="text/javascript" src="fonctions/wishlistAjour.js"></script>
+    </head>
+
+    <body>	
+		
+	<!-- MAIN -->
+	<div id="wrapper">
+
+		<table>
+			<tr>
+				<td width="458" rowspan="2">
+					<!--Logo/Banniere-->
+					<a href="indexLogged.html"><img src="img/logo.png"></a>
+				</td>
+				<td width="102" rowspan="2"> 
+					<!--Google Search--><!--
+					<FORM method=GET action="http://www.google.com/search">
+						<INPUT TYPE=text name=q size=20 maxlength=255 value="">
+						<INPUT TYPE=hidden name=hl value="en">
+						<INPUT type=submit name=btnG VALUE="Chercher">
+					</FORM>-->
+					<!--End Google Search-->
+				</td>
+				<td colspan="2" align="right" id="verticalAlignMiddle">Bienvenue <b>Mathieu</b>  : 
+				<a href="deconnecte.html">Déconnexion</a></td>
+			</tr>
+			<tr>
+				<td width="360" align="right">
+					<a href="moncompte.html"><img src="img/moncompteicon.png" alt="Mon Compte"/></a>
+					<a href="cartPage.html"><img src="img/cart0.png" alt="" width="106" height="42" id="cart"/></a>
+				</td>
+			</tr>
+		</table>
+		<!--End Entete-->
+
+		<p>
+		
+		<!--Bar Menu-->
+		<div id="wrap"><ul class="navbar">
+			<li><a href="shop/OnSale.html" target="iframeProduits">En Vente</a></li>
+			<li><a href="shop/RPG.html" target="iframeProduits">RPG</a></li>
+			<li><a href="shop/FPS.html" target="iframeProduits">FPS</a></li>
+			<li><a href="shop/RTS.html" target="iframeProduits">RTS</a></li>
+			<li><a href="shop/Action.html" target="iframeProduits">Action</a></li>
+			<li><a href="shop/Sport.html" target="iframeProduits">Sport</a></li>
+			<li><a href="shop/Simulation.html" target="iframeProduits">Simulation</a></li>
+		</ul></div>
+
+		<!-- CONTENU -->
+		<div id="content">
+			<table width="100%">
+			<tr>
+			<td vAlign="top" width="250">
+				<p id="titleBar">
+					Options
+				</p>
+				<ul>
+				<li><a href="moncompte.html">Éditer mon profile</a><br>
+				<li><a href="moncompte2.html">Données de paiement</a><br>
+				<li><a href="moncompte3.html">Historique des paiements</a><br>
+				<li><b>Mon Wishlist</b><br>
+				</ul>
+			</td>
+			
+			<td width="10">&nbsp;</td>
+			
+			<td vAlign="top">
+				<p id="titleBar">
+					Mon Wishlist
+				</p>
+				
+				<form name=panierAchat>
+					<table id="cartTable">
+						<tr>
+							<th>Item</th><th>Description</th><th>Quantité</th><th>Prix</th><th>Sous-total</th>
+						</tr>
+						
+						<tr>
+							<td bgcolor="#FFFFFF"><img src="img/rpg03.png" width="100" height="140"></td>
+							
+							<td bgcolor="#FFFFFF">Dragon Quest VIII</td>
+							
+							<td bgcolor="#FFFFFF">
+								<INPUT TYPE=text id=qte1 size=10 maxlength=10 value="1"><br>
+								<a href="#">Ajouter au panier</a><br>
+								<a href="#">Supprimer</a><br>
+							</td>
+							
+							<td id="Prix1" bgcolor="#FFFFFF">10$</td>
+							
+							<td bgcolor="#FFFFFF"><span id="SousTotal1">--</span>$</td>
+						</tr>
+						
+						<tr>
+							<td bgcolor="#F9F9F9"><img src="img/rpg05.png" width="100" height="140"></td>
+							
+							<td bgcolor="#F9F9F9">Xenogears</td>
+							
+							<td bgcolor="#F9F9F9">
+								<INPUT TYPE=text id=qte2 size=10 maxlength=10 value="1"><br>
+								<a href="#">Ajouter au panier</a><br>
+								<a href="#">Supprimer</a><br>
+							</td>
+							
+							<td id="Prix2" bgcolor="#F9F9F9">30$</td>
+							
+							<td bgcolor="#F9F9F9"><span id="SousTotal2">--</span>$</td>
+						</tr>
+						
+						<tr>
+							<td bgcolor="#F9F9F9"><img src="img/fps03.png" width="100" height="140"></td>
+							
+							<td bgcolor="#F9F9F9">Bioshock Infinite</td>
+							
+							<td bgcolor="#F9F9F9">
+								<INPUT TYPE=text id=qte3 size=10 maxlength=10 value="1"><br>
+								<a href="#">Ajouter au panier</a><br>
+								<a href="#">Supprimer</a><br>
+							</td>
+							
+							<td id="Prix3" bgcolor="#F9F9F9">40$</td>
+							
+							<td bgcolor="#F9F9F9"><span id="SousTotal3">--</span>$</td>
+						</tr>
+						
+						
+					</table>
+					
+					<p>
+					<div align="right">
+						Item(s) ajoutés dans votre Wishlist : <input type="text" size=3 id="nombreItem" readonly>
+						<p>
+						Prix Total : <input type="text" size=7 id="PrixTotal" readonly>
+						<p>
+						<INPUT TYPE=button size=10 maxlength=10 value="Mise à Jour" onclick="ajouter();Update();">
+						<p>
+					</div>
+					
+				<form>
+				
+				<p>
+				
+			</td>
+			</tr>
+			</table>
+		</div>
+		<!-- END CONTENU -->
+		
+	</div>
+	<!-- END MAIN -->
+	
+
+
+	<!-- COPYRIGHT -->
+
+	<div id="footer">
+		<p>
+		&copy; Mathieu Pronovost, Patrick Nguyen, Mu Niek Kim, Shen Ren
+		</p>
+	</div>
+	
+	</body>
+</html>

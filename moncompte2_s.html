@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>INM5151 Projet Web</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+        <link rel="stylesheet" type="text/css" href="css/mainstyle.css">
+		<link rel="stylesheet" type="text/css" href="css/barmenu.css">
+		
+		<!--script type="text/javascript" src="fonctions/.js"></script-->
+    </head>
+
+    <body>
+		
+	<!-- MAIN -->
+	<div id="wrapper">
+
+		<table>
+			<tr>
+				<td width="458" rowspan="2">
+					<!--Logo/Banniere-->
+					<a href="indexLogged.html"><img src="img/logo.png"></a>
+				</td>
+				<td width="102" rowspan="2"> 
+					<!--Google Search--><!--
+					<FORM method=GET action="http://www.google.com/search">
+						<INPUT TYPE=text name=q size=20 maxlength=255 value="">
+						<INPUT TYPE=hidden name=hl value="en">
+						<INPUT type=submit name=btnG VALUE="Chercher">
+					</FORM>-->
+					<!--End Google Search-->
+				</td>
+				<td colspan="2" align="right" id="verticalAlignMiddle">Bienvenue <b>Mathieu</b>  : 
+				<a href="deconnecte.html">Déconnexion</a></td>
+			</tr>
+			<tr>
+				<td width="360" align="right">
+					<a href="moncompte.html"><img src="img/moncompteicon.png" alt="Mon Compte"/></a>
+					<a href="cartPage.html"><img src="img/cart0.png" alt="" width="106" height="42" id="cart"/></a>
+				</td>
+			</tr>
+		</table>
+		<!--End Entete-->
+
+		<p>
+		
+		<!--Bar Menu-->
+		<div id="wrap"><ul class="navbar">
+			<li><a href="shop/OnSale.html" target="iframeProduits">En Vente</a></li>
+			<li><a href="shop/RPG.html" target="iframeProduits">RPG</a></li>
+			<li><a href="shop/FPS.html" target="iframeProduits">FPS</a></li>
+			<li><a href="shop/RTS.html" target="iframeProduits">RTS</a></li>
+			<li><a href="shop/Action.html" target="iframeProduits">Action</a></li>
+			<li><a href="shop/Sport.html" target="iframeProduits">Sport</a></li>
+			<li><a href="shop/Simulation.html" target="iframeProduits">Simulation</a></li>
+		</ul></div>
+
+		<!-- CONTENU -->
+		<div id="content">
+			<table width="100%">
+			<tr>
+			<td vAlign="top" width="250">
+				<p id="titleBar">
+					Options
+				</p>
+				<ul>
+				<li><a href="moncompte.html">Éditer mon profile</a><br>
+				<li><b>Données de paiement</b><br>
+				<li><a href="moncompte3.html">Historique des paiements</a><br>
+				<li><a href="moncompte4.html">Mon Wishlist</a><br>
+				</ul>
+			</td>
+			
+			<td width="10">&nbsp;</td>
+			
+			<td vAlign="top">
+				<p id="titleBar">
+					Mes données pour le paiement
+				</p>
+				
+				<form name="dpaiementForm" onsubmit="" method="post" action="">
+					<p>
+					Vos informations ont été enregistrés avec succès.
+					<p>
+				
+					Adresse Courriel <br>
+					<input type="text" value="mathieu@email.com" size=30>
+					<p>
+			
+					
+					Type du paiement <br>
+					<select>
+						<option>American Express</option>
+						<option>Cirrus</option>
+						<option>Delta</option>
+						<option>Direct Debit</option>
+						<option>Discover</option>
+						<option>JCB</option>
+						<option>Master Card</option>
+						<option>Moneybookers</option>
+						<option>PayPal</option>
+						<option>Solo</option>
+						<option>Switch</option>
+						<option>Visa</option>
+						<option>Western Union</option>
+						<option>2CO</option>
+					</select> 
+					<p>
+					
+					Numéro de carte <br>
+					<input type="text" value="5191 1234 5678 9123" size=30>
+					<p>
+					
+					Date d'expiration <br>
+					<input type="text" value="24" size=3 maxlength="2">
+					
+					<select>
+						<option>Janvier</option>
+						<option>Février</option>
+						<option>Mars</option>
+						<option>Avril</option>
+						<option>Mai</option>
+						<option>Juin</option>
+						<option>Juillet</option>
+						<option>Août</option>
+						<option>Septembre</option>
+						<option>Octobre</option>
+						<option>Novembre</option>
+						<option>Décembre</option>
+					</select> 
+					
+					<select>
+						<option>2014</option>
+						<option>2015</option>
+						<option>2016</option>
+						<option>2017</option>
+						<option>2018</option>
+					</select>
+					<p>
+					
+					CVV <br>
+					<input type="text" value="123" size=5>
+					<p>
+					
+				</form>
+				
+				<p>
+				<hr>
+				
+				<div align="right">
+					<form action="moncompte2_s.html">
+						<INPUT TYPE=submit size=10 value="Sauvegarder">
+					</form>
+				</div>
+				
+				<p>
+				
+			</td>
+			</tr>
+			</table>
+		</div>
+		<!-- END CONTENU -->
+		
+	</div>
+	<!-- END MAIN -->
+	
+
+
+	<!-- COPYRIGHT -->
+
+	<div id="footer">
+		<p>
+		&copy; Mathieu Pronovost, Patrick Nguyen, Mu Niek Kim, Shen Ren
+		</p>
+	</div>
+	
+	</body>
+</html>
